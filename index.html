@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--IONIC ICON-->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
@@ -20,34 +23,62 @@
 
             <div class="main-menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Search</a></li>
-                    <li><a href="">Your Library</a></li>
+                    <li><a href="">
+                        <ion-icon name="home-outline"></ion-icon>
+                        Home</a></li>
+                    <li><a href="">
+                        <ion-icon name="search-outline"></ion-icon>
+                        Search</a></li>
+                    <li><a href="">
+                        <ion-icon name="library-outline"></ion-icon>
+                        Your Library</a></li>
                 </ul>
             </div>
 
             <!--PLAYLISTS-->
             <div class="playlists">
                 <h5>Playlists</h5>
-                <ul>
-                    <li><a href="">Create Playlist</a></li>
-                    <li><a href="">Liked Songs</a></li>
+                <ul class="playlist-cta">
+                    <li><a href="">
+                         <span class="rect-icon">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </span>
+                        <span class="text">
+                        Create Playlist
+                    </span>
+
+
+                    </a></li>
+                    <li>
+
+                        <a href="">
+                            <span class="rect-icon">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </span>
+                            <span class="text">Liked Songs</span>
+                        </a></li>
                 </ul>
+
+                <hr>
+
                 <div class="my-playlists">
                     <ul>
                         <li>
-                            <a href="">DSK</a>
+                            <a href="">
+
+                                DSK</a>
                         </li>
+
                         <li>
-                            <a href="">This is Pouya</a>
+                            <a href="">
+
+                                This is Pouya</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <!--END PLAYLIST-->
         </div>
-
-
         <div class="col-right">
             <nav>
                 <!--NAV BUTTONS-->
@@ -66,14 +97,14 @@
                     <div class="row">
                         <div class="col">
                             <a href="">
-                             <div>
-                                <img src="" alt="">
-                                <div></div>
-                             </div>
-                            
-                             <div>
-                                <a href=""></a>
-                             </div>
+                                <div>
+                                    <img src="" alt="">
+                                    <div></div>
+                                </div>
+
+                                <div>
+                                    <a href=""></a>
+                                </div>
                             </a>
                         </div>
 
@@ -94,11 +125,37 @@
 
                 </div>
 
+
+                <section>
+                    <div>
+                        <h4>Recently Played</h4>
+                        <a href="">See All</a>
+                    </div>
+
+                    <div>
+                        <!--CARD ITEM-->
+                        <div class="card-item">
+                            <img src="" alt="">
+                            <h5 class="title">Beverly Hills</h5>
+                            <h6 class="sub-title">Dok2</h6>
+
+                            <div class="cover">
+                                <a href="javascript:void(0)">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <!--END CARD ITEM-->
+                    </div>
+                </section>
+
             </div>
         </div>
     </div>
 
+    <!--BOTTOM PLAYER-->
     <div></div>
+    <!--END BOTTOM PLAYER-->
 </div>
 </body>
 </html>
