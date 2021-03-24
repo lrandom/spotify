@@ -21,19 +21,32 @@ a {
 
 .wrapper .main-content{
     border:1px solid red;
+    position: fixed;
+    bottom:0px;
+    top:0px;
+    left:0px;
+    right:0px;
 }
+
 .wrapper .main-content .col-left{
     float:left;
     border:1px solid red;
     background:#1f1f1f;
+    width: 25%;
+    position: absolute;
+    bottom:0px;
+    top:0px;
 }
 
 .wrapper .main-content .col-left .logo{
-   width:150px;
+   width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .wrapper .main-content .col-left .logo img{
-    width:100%;
+    width:150px;
 }
 
 .wrapper .main-content .col-left .main-menu{
@@ -70,14 +83,44 @@ a {
 .wrapper .main-content
 .col-left .playlists
 .playlist-cta a .rect-icon{
-    display: inline-block;
     width:30px;
     height:30px;
     background: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.wrapper .main-content
+.col-left
+.playlists
+.playlist-cta a
+.gradient-icon{
+    background: rgb(130,129,150);
+    background: linear-gradient(153deg, rgba(130,129,150,1) 0%, rgba(41,41,41,1) 0%, rgba(103,115,255,1) 90%);
+    color:white;
+}
+
+
 
 .wrapper .main-content
 .col-left .playlists
 .playlist-cta a .text{
     margin-left:5px;
+}
+
+.wrapper .main-content .col-left .my-playlists{
+    margin-top:10px;
+    height: 230px;
+    overflow-y: auto;
+}
+
+.wrapper .main-content .col-left .my-playlists li{
+    margin-top: 10px;
+}
+
+.wrapper .main-content .col-left .my-playlists li a{
+    font-size: 14px;
+    color:white;
 }
